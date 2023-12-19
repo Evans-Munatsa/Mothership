@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Puregood</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#F5C332">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="img/ui/purgood.png" type="image/x-icon">
+
+    <%= stylesheet_link_tag 'style.css'%>
+
+    <%= stylesheet_link_tag 'bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'swiper.min.css' %>
+    <%= stylesheet_link_tag 'datepicker.css' %>
+    <%= stylesheet_link_tag 'mapbox-style.css' %>
+    <%= stylesheet_link_tag 'fancybox.min.css' %>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <%= javascript_include_tag 'main.js' %>
+
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+      <!-- app wrapper -->
+  <div class="sb-app">
+    <!-- preloader -->
+    <div class="sb-preloader">
+      <div class="sb-preloader-bg"></div>
+      <div class="sb-preloader-body">
+        <div class="sb-loading">
+          <div class="sb-percent"><span class="sb-preloader-number" data-count="101">00</span><span>%</span></div>
+        </div>
+        <div class="sb-loading-bar">
+          <div class="sb-bar"></div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+    <!-- click effect -->
+    <div class="sb-click-effect"></div>
+    <!-- loader -->
+    <div class="sb-load"></div>
+    <!-- top bar -->
+    <div class="sb-top-bar-frame">
+      <div class="sb-top-bar-bg"></div>
+      <div class="container">
+        <div class="sb-top-bar">
+        
+
+          <%= image_tag("purgood.png", class:"sb-logo-frame") %>
+          <!-- menu -->
+          <div class="sb-left-side">
+            <nav id="sb-dynamic-menu" class="sb-menu-transition">
+              <ul class="sb-navigation">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">Who We Are</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="contact">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- menu btn -->
+            <div class="sb-menu-btn"><span></span></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- top bar end -->
+
+    <%= yield %>
+
+    <footer>
+      <div class="container">
+        <div class="sb-footer-frame">
+          <a href="index.html" class="sb-logo-frame">
+            <!-- logo img -->
+            <%= image_tag("purgood.png", class:"sb-logo-frame") %>
+            <!-- <img src="img/illustrations/purgood.png" alt="PureGood"> -->
+          </a>
+          <ul class="sb-social">
+            <!-- <li><a href="#."><i class="fa fa-facebook-square"></i></a></li> -->
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <li><a href="#."><i class="far fa-circle"></i></a></li>
+            <li><a href="#."><i class="far fa-circle"></i></a></li>
+            <li><a href="#."><i class="far fa-circle"></i></a></li>
+          </ul>
+          <div class="sb-copy">&copy; 2023 Evans Munatsa. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+      <!-- app wrapper -->
+  </div>
+    <%= javascript_include_tag 'jquery.min.js' %>
+    <%= javascript_include_tag 'smooth-scroll.js' %>
+    <%= javascript_include_tag 'swup.min.js' %>
+    <%= javascript_include_tag 'swiper.min.js' %>
+    <%= javascript_include_tag 'datepicker.js' %>
+    <%= javascript_include_tag 'isotope.js' %>
+    <%= javascript_include_tag 'sticky.js' %>
+    <%= javascript_include_tag 'mapbox.min.js' %>
+    <%= javascript_include_tag 'fancybox.min.js' %>
+    <%= javascript_include_tag 'main.js' %>
+  </body>
+</html>
