@@ -1,11 +1,3 @@
-  <!-- app wrapper -->
-  <div class="sb-app">
-    <!-- click effect -->
-    <div class="sb-click-effect"></div>
-    <!-- loader -->
-    <div class="sb-load"></div>
-
-
     <!-- dynamic content -->
     <div id="sb-dynamic-content" class="sb-transition-fade">
 
@@ -19,9 +11,9 @@
                 <div class="sb-main-title text-center">
                   <span class="sb-suptitle sb-mb-30">Who We Are</span>
                   <h1 class="sb-mb-30">There is no <span>love</span> more sincere <br> than the love of <span>food</span>.</h1>
-                  <p class="sb-text sb-text-lg sb-mb-30">Serving you the RIGHT food, at the RIGHT time, from the RIGHT source…</p>
+                  <p class="sb-text sb-text-lg sb-mb-30">Serving you the RIGHT food, at the RIGHT time, from the RIGHT source...</p>
                   <ul class="sb-breadcrumbs">
-                    <li><a href="home">Home</a></li>
+                    <li><a href="home-1.html">Home</a></li>
                     <li><a href="#.">Who We Are</a></li>
                   </ul>
                 </div>
@@ -43,7 +35,8 @@
             <div class="col-lg-6 align-self-center">
               <div class="sb-illustration-2 sb-mb-90">
                 <div class="sb-interior-frame">
-                  <img src="img/gallery/chef.jpg" alt="interior" class="sb-interior" style="object-position: center">
+                  <%= image_tag("gallery/chef.jpg", class:"sb-interior", style: "object-position: center") %>
+
                 </div>
                 <div class="sb-square"></div>
                 <div class="sb-cirkle-1"></div>
@@ -52,8 +45,8 @@
                 <div class="sb-cirkle-4"></div>
                 <div class="sb-experience">
                   <div class="sb-exp-content">
-                    <p class="sb-h1 sb-mb-10">17</p>
-                    <p class="sb-h3">Years Experiense</p>
+                    <p class="sb-h1 sb-mb-10">10</p>
+                    <p class="sb-h3">Years Experience</p>
                   </div>
                 </div>
               </div>
@@ -61,10 +54,10 @@
             <div class="col-lg-6 align-self-center sb-mb-60">
               <h2 class="sb-mb-60">Serving you the RIGHT food, <br>at the RIGHT time</h2>
               <p class="sb-text sb-mb-30">
-                Pure Good is a health-focused contract catering company. From our humble beginnings as a health cafe near parliament, we’ve established ourself as a key player in in-house corporate catering. Feeding 2U, GetSmarter, The Foschini Group and Workshop17 Watershed
+                Pure Good is a health-focused contract catering company. From our humble beginnings as a health cafe near parliament, we've established ourself as a key player in in-house corporate catering. Feeding TBE Africa, The Ares Group, The Foschini Group, Workshop17 Watershed, The French Schools of Cape Town, Explore & Discover Motessori
               </p>
               <p class="sb-text sb-mb-60">
-                From achieving finalist status on MasterChef SA to founding a flourishing corporate catering company, Pure Good founder Shannon Smuts has spent half of her life in the kitchen. The other half? Advancing the philosophy of Conscious Capitalism through her close relationship with small scale community farmers  – which happens to be how Pure Good was born. Our menus are designed to allow maximum usage of available vegetables & produce from local, small-scale farming communities, making them 100% sustainable and minimising food waste as much as possible. 
+                 From achieving finalist status on MasterChef SA to founding a flourishing corporate catering company, Pure Good founder Shannon Brauer has spent half of her life in the kitchen. The other half? Advancing the philosophy of Conscious Capitalism through her close relationship with small scale community farmers which happens to be how Pure Good was born. Our menus are designed to allow maximum usage of available vegetables & produce from local, small-scale farming communities, making them 100% sustainable and minimising food waste as much as possible. 
               </p>
               <!-- <img src="img/ui/signature.png" alt="Signature" class="sb-signature sb-mb-30"> -->
             </div>
@@ -83,7 +76,7 @@
                 <div class="sb-feature-text">
                   <h3 class="sb-mb-15">FARM TO FORK</h3>
                   <p class="sb-text">
-                    We keep our friends close and our farmers closer: Pure Good’s partnership with the Umthunzi Farming Community, Beleaf Growers & Ekasi Project Green allows us to create an ethical, nutrient-dense menu built entirely around what grows organically and in abundance on the farms.
+                     We keep our friends close and our farmers closer: Pure Good's partnership with the Umthunzi Farming Community, Beleaf Growers & Ekasi Project Green allows us to create an ethical, nutrient-dense menu built entirely around what grows organically and in abundance on the farms. 
                   </p>
                 </div>
               </div>
@@ -105,7 +98,7 @@
                 <div class="sb-feature-text">
                   <h3 class="sb-mb-15">ATTAINABLE HEALTH</h3>
                   <p class="sb-text">
-                    We are passionate about making real food available to real people. Eating ethically and organically shouldn’t break the bank – which is why our wholesome, nutritious menu is intelligently designed to get you the most bang for your buck.
+                     We are passionate about making real food available to real people. Eating ethically and organically shouldn't break the bank, which is why our wholesome, nutritious menu is intelligently designed to get you the most bang for your buck. 
                   </p>
                 </div>
               </div>
@@ -134,7 +127,7 @@
               <div class="sb-mb-90">
                 <span class="sb-suptitle sb-mb-15">Promo video</span>
                 <h2 class="sb-mb-30">Restaurant is like a theater.<br> Our task is to amaze you!</h2>
-                <p class="sb-text sb-mb-30">Repellat, dolorem a. Qui ipsam quos, obcaecati mollitia consectetur ad vero minus neque sit architecto totam distineserunt pariatur adipisci rem aspernatur illum ex!</p>
+                <p class="sb-text sb-mb-30">Our company values are what guide us as we strive to be the best, to fulfill our goal to pioneer sustainable food solutions in the catering world and to align every decision we make as a team.</p>
                 <!-- button -->
                 <a data-fancybox="" data-no-swup href="https://www.youtube.com/watch?v=tsz6IpM5OPY" class="sb-btn">
                   <span class="sb-icon">
@@ -188,54 +181,38 @@
             <div class="col-lg-4">
               <div class="sb-team-member sb-mb-30">
                 <div class="sb-photo-frame sb-mb-15">
-                  <img src="img/team/1.png" alt="Team member">
+                  <!-- <img src="img/team/1.png" alt="Team member"> -->
+                  <%= image_tag("team/1.png", alt:"team member") %>
                 </div>
                 <div class="sb-member-description">
-                  <h4 class="sb-mb-10">Paul Trueman</h4>
-                  <p class="sb-text sb-text-sm sb-mb-10">Chef</p>
-                  <ul class="sb-social">
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                  </ul>
+                  <h3 class="sb-mb-10">Cecilia Hans</h3>
+                  <p class="sb-text sb-text-sm sb-mb-10">TBE Dock Road Manager</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="sb-team-member sb-mb-30">
                 <div class="sb-photo-frame sb-mb-15">
-                  <img src="img/team/2.png" alt="Team member">
+                  <%= image_tag("team/2.png", alt:"team member") %>
                 </div>
                 <div class="sb-member-description">
-                  <h3 class="sb-mb-10">Emma Newman</h3>
-                  <p class="sb-text sb-text-sm sb-mb-10">Assistant chef</p>
-                  <ul class="sb-social">
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                  </ul>
+                  <h3 class="sb-mb-10">Lungi Bazi</h3>
+                  <p class="sb-text sb-text-sm sb-mb-10">Workshop17 Site Manager</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="sb-team-member sb-mb-30">
                 <div class="sb-photo-frame sb-mb-15">
-                  <img src="img/team/3.png" alt="Team member">
+                  <%= image_tag("team/3.png", alt:"team member") %>
                 </div>
                 <div class="sb-member-description">
-                  <h3 class="sb-mb-10">Oscar Oldman</h3>
-                  <p class="sb-text sb-text-sm sb-mb-10">Chef</p>
-                  <ul class="sb-social">
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                    <li><a href="#."><i class="far fa-circle"></i></a></li>
-                  </ul>
+                  <h3 class="sb-mb-10">Malwande</h3>
+                  <p class="sb-text sb-text-sm sb-mb-10">Workshop17 Barista</p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -246,8 +223,8 @@
         <div class="container">
           <div class="sb-group-title sb-mb-30">
             <div class="sb-left sb-mb-30">
-              <h2 class="sb-mb-30">Reviews <span>about</span> us</h2>
-              <p class="sb-text">Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.</p>
+              <h2 class="sb-mb-30">What <span>Our</span> Customers Say</h2>
+              <!-- <p class="sb-text">Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.</p> -->
             </div>
             <div class="sb-right sb-mb-30">
               <!-- slider navigation -->
@@ -255,15 +232,6 @@
                 <div class="sb-prev-btn sb-reviews-prev"><i class="fas fa-arrow-left"></i></div>
                 <div class="sb-next-btn sb-reviews-next"><i class="fas fa-arrow-right"></i></div>
               </div>
-              <!-- slider navigation end -->
-              <!-- button -->
-              <a href="index.html" class="sb-btn">
-                <span class="sb-icon">
-                  <img src="img/ui/icons/dialog.svg" alt="icon">
-                </span>
-                <span>All revievs</span>
-              </a>
-              <!-- button end -->
             </div>
           </div>
           <div class="swiper-container sb-reviews-slider">
@@ -271,7 +239,7 @@
               <div class="swiper-slide">
                 <div class="sb-review-card">
                   <div class="sb-review-header sb-mb-15">
-                    <h4 class="sb-mb-15">Very tasty</h4>
+                    <h4 class="sb-mb-15">Great food with an even better story!</h4>
                     <ul class="sb-stars">
                       <li><i class="fas fa-star"></i></li>
                       <li><i class="fas fa-star"></i></li>
@@ -280,20 +248,19 @@
                       <li><i class="fas fa-star"></i></li>
                     </ul>
                   </div>
-                  <p class="sb-text sb-mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
-                    tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!</p>
+                  <p class="sb-text sb-mb-15">We are lucky enough to have Pure Good Food as the cafe operator at our office. At Pure Good, you are always greeted with a friendly smile from your morning coffee, to your delicious lunch and even that afternoon sweet treat. The food served is fresh, healthy and great value for money. And everything comes from local suppliers too! Great food with an even better story!</p>
                   <div class="sb-author-frame">
-                    <div class="sb-avatar-frame">
+                   <!--  <div class="sb-avatar-frame">
                       <img src="img/faces/1.jpg" alt="Guest">
-                    </div>
-                    <h4>Emma Doe</h4>
+                    </div> -->
+                    <h4>Laura Munch - Workshop17 Watershed Site Manager</h4>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="sb-review-card">
                   <div class="sb-review-header sb-mb-15">
-                    <h4 class="sb-mb-15">I have lunch here every day</h4>
+                    <h4 class="sb-mb-15">The menu is tasty</h4>
                     <ul class="sb-stars">
                       <li><i class="fas fa-star"></i></li>
                       <li><i class="fas fa-star"></i></li>
@@ -302,13 +269,12 @@
                       <li><i class="fas fa-star"></i></li>
                     </ul>
                   </div>
-                  <p class="sb-text sb-mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
-                    tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!</p>
+                  <p class="sb-text sb-mb-15">Everyone in the office has become a Workshop17 Cafe regular, the menu is tasty, healthy and affordable and offers enough variety that packed lunches have become a thing of the past. Not to mention consistently great coffee and some of the friendliest staff in town... a worthy go-to!</p>
                   <div class="sb-author-frame">
-                    <div class="sb-avatar-frame">
+                   <!--  <div class="sb-avatar-frame">
                       <img src="img/faces/2.jpg" alt="Guest">
-                    </div>
-                    <h4>John Doe</h4>
+                    </div> -->
+                    <h4>Matt Turner - Tesla Energy Products: Workshop17</h4>
                   </div>
                 </div>
               </div>
@@ -324,13 +290,12 @@
                       <li class="sb-empty"><i class="fas fa-star"></i></li>
                     </ul>
                   </div>
-                  <p class="sb-text sb-mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
-                    tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!</p>
+                  <p class="sb-text sb-mb-15">Our team members love having healthy food options available to them. Pure Good gives them variety in terms of juices, smoothies, salads and wraps easy, healthy food that's affordably priced.</p>
                   <div class="sb-author-frame">
-                    <div class="sb-avatar-frame">
+                    <!-- <div class="sb-avatar-frame">
                       <img src="img/faces/3.jpg" alt="Guest">
-                    </div>
-                    <h4>Jane Doe</h4>
+                    </div> -->
+                    <h4>Senta Morley, Group Director - TFG Human Resources</h4>
                   </div>
                 </div>
               </div>
@@ -346,13 +311,12 @@
                       <li><i class="fas fa-star"></i></li>
                     </ul>
                   </div>
-                  <p class="sb-text sb-mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus
-                    tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!</p>
+                  <p class="sb-text sb-mb-15">Not only does our office get to enjoy the delicious lunches & juices delivered to us daily, but my wife & I love getting epic freezer meals from Pure Good too, as they are exceptionally affordable and super convenient, wholesome delicious home-cooked meals. A game changer for week night dinners.</p>
                   <div class="sb-author-frame">
-                    <div class="sb-avatar-frame">
+                   <!--  <div class="sb-avatar-frame">
                       <img src="img/faces/4.jpg" alt="Guest">
-                    </div>
-                    <h4>Jane Doe</h4>
+                    </div> -->
+                    <h4>Jayden Cohen - National Sales Manager: Ozow</h4>
                   </div>
                 </div>
               </div>
@@ -361,8 +325,3 @@
         </div>
       </section>
       <!-- revievs end -->
-    </div>
-    <!-- dynamic content end -->
-
-  </div>
-

@@ -7,6 +7,21 @@ class PagesController < ApplicationController
       end
     end
 
+    def home
+    end
+
+    def whatwedo
+    end
+
+    def whoweare
+    end
+
+    def workwithus
+    end
+
+    def contact
+    end
+
     private
     def valid_page?
       File.exist?(Pathname.new(Rails.root + "app/views/pages/#{params[:page]}.html.erb"))
